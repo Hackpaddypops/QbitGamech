@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Qbit Gamech</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_profile">Profile</string>
+    <string name="default_score">0</string>
+    <string name="predict_next_ball">Predict outcome of next ball:</string>
+    <string name="your_prediction">Your Prediction:</string>
+    <string name="result">Result:</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="referandearn">Refer and Earn</string>
+    <string name="feedback">Give Feedback</string>
+    <string name="profileupdate">Update Profile</string>
+    <string name="watchandearn"><![CDATA[Watch & Earn]]></string>
+</resources>
