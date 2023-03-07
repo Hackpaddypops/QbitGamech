@@ -16,12 +16,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="202dp"
+            android:layout_height="73dp"
+            android:fontFamily="@font/orbitron"
+            android:text="@string/qbitrewards"
+            android:textAlignment="textEnd"
+            android:textColor="#00BCD4"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.861"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_wrapBehaviorInParent="horizontal_only" />
+
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundstyle"
+            android:drawableLeft="@drawable/baseline_question_answer_24"
+            android:fontFamily="@font/baloo"
+            android:text="@string/faq"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.949"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

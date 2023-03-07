@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+.idea/sonarlint-state.xml
+.idea/sonarlint.xml

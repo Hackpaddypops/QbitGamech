@@ -13,4 +13,6 @@
     <string name="feedback">Give Feedback</string>
     <string name="profileupdate">Update Profile</string>
     <string name="watchandearn"><![CDATA[Watch & Earn]]></string>
+    <string name="faq">FAQ</string>
+    <string name="qbitrewards">Qbit Rewards</string>
 </resources>
