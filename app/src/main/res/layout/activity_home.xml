@@ -8,98 +8,97 @@
     android:background="@color/spaceblue">
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:baselineAligned="true"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        android:layout_height="wrap_content"
+        android:background="@color/denimblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment_activity_home">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appBarLayout"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/denimblue">
+            app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment_activity_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment_activity_home"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@mipmap/logo_foreground" />
 
-                    <ImageView
-                        android:layout_width="73dp"
-                        android:layout_height="match_parent"
-                        android:contentDescription="@string/app_name"
-                        app:srcCompat="@mipmap/logo_foreground" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/orbitron"
-                        android:gravity="center_vertical"
-                        android:text="@string/app_name"
-                        android:textColor="#00BCD4"
-                        android:textSize="24sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/orbitron"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="#00BCD4"
+                    android:textSize="24sp" />
 
 
-                    <TextView
-                        android:layout_width="66dp"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/coiny"
-                        android:gravity="center_vertical"
-                        android:text="@string/default_score"
-                        android:textAlignment="viewEnd"
-                        android:textColor="#FFEB3B"
-                        android:textSize="34sp" />
+                <TextView
+                    android:layout_width="66dp"
+                    android:layout_height="match_parent"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/coiny"
+                    android:gravity="end"
+                    android:text="@string/default_score"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFEB3B"
+                    android:textSize="34sp" />
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:layout_width="41dp"
-                        android:layout_height="82dp"
-                        android:adjustViewBounds="true"
-                        android:cropToPadding="true"
-                        android:scaleType="centerCrop"
-                        android:scaleX="3"
-                        android:scaleY="3"
-                        app:lottie_autoPlay="true"
-                        app:lottie_loop="true"
-                        app:lottie_rawRes="@raw/gemstone" />
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="41dp"
+                    android:layout_height="82dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:scaleX="3"
+                    android:scaleY="3"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/gemstone" />
 
-                </LinearLayout>
-            </androidx.appcompat.widget.Toolbar>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
 
-        </com.google.android.material.appbar.AppBarLayout>
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/nav_host_fragment_activity_home"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="752dp"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/mobile_navigation" />
+    </com.google.android.material.appbar.AppBarLayout>
 
 
-    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_activity_home"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:navGraph="@navigation/mobile_navigation" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/denimblue"
         app:itemRippleColor="#FF0000"
         app:itemTextColor="#FFFF00"
+        app:layout_constraintTop_toBottomOf="@id/nav_host_fragment_activity_home"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
