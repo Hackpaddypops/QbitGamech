@@ -1,4 +1,4 @@
-package com.qbit.qbitgamech.ui.wallet;
+package com.qbit.qbitgamech.homeui.wallet;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

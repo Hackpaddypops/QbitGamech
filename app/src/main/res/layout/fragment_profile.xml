@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/spaceblue"
-    tools:context=".ui.profile.ProfileFragment">
+    tools:context=".homeui.profile.ProfileFragment">
 
 
     <ScrollView
@@ -93,6 +93,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,6 +104,7 @@
         app:layout_constraintVertical_bias="0.089">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/learderboardCard"
             android:layout_width="369dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
@@ -123,6 +125,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/refer_and_earn"
             android:layout_width="369dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
@@ -143,6 +146,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/watchEarnCard"
             android:layout_width="369dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
@@ -163,6 +167,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/update_profile_card"
             android:layout_width="369dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
@@ -183,6 +188,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/feedback_card"
             android:layout_width="369dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
@@ -197,6 +203,27 @@
                 android:text="@string/feedback"
                 android:textAlignment="center"
                 android:textColor="@color/denimblue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/red"
+            app:cardCornerRadius="30dp">
+
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="@string/logout"
+                android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 

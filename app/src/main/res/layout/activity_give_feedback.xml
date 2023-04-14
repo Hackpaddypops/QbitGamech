@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GiveFeedback">
+    tools:context=".GiveFeedback"
+    android:orientation="vertical"
+    android:background="@color/spaceblue">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/feedback"
+        android:textColor="#00BCD4"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/feedback_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/amita_bold"
+        android:hint="@string/enter_your_feedback_here"
+        android:inputType="textLongMessage|textMultiLine"
+        android:textColor="#00BCD4"
+        android:textColorHint="#00BCD4"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:text="@string/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/baloo"
+        android:background="@drawable/roundstyle"/>
+
+</LinearLayout>

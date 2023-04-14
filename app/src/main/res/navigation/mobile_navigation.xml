@@ -7,20 +7,20 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.qbit.qbitgamech.ui.home.HomeFragment"
+        android:name="com.qbit.qbitgamech.homeui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_wallet"
-        android:name="com.qbit.qbitgamech.ui.wallet.WalletFragment"
+        android:name="com.qbit.qbitgamech.homeui.wallet.WalletFragment"
         android:label="@string/title_wallet"
         tools:layout="@layout/fragment_wallet"
         android:icon="@drawable/baseline_account_balance_wallet_24"/>
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.qbit.qbitgamech.ui.profile.ProfileFragment"
+        android:name="com.qbit.qbitgamech.homeui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

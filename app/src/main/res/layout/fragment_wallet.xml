@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/spaceblue"
-    tools:context=".ui.wallet.WalletFragment">
+    tools:context=".homeui.wallet.WalletFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,10 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@drawable/walletpagebg"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView3"
@@ -33,11 +33,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.861"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/faqbutton"
             app:layout_wrapBehaviorInParent="horizontal_only" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/faqbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -55,17 +55,18 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="407dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
@@ -74,7 +75,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:layout_width="41dp"
@@ -134,9 +136,11 @@
                 android:layout_marginEnd="25dp">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
+                    android:id="@+id/wallet_earn_card"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
+                    android:layout_weight="1"
                     android:background="@color/teal_200"
                     app:cardBackgroundColor="#00BCD4"
                     app:cardCornerRadius="10dp"
@@ -175,9 +179,11 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
+                    android:id="@+id/wallet_redeem_card"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="35dp"
+                    android:layout_weight="1"
                     app:cardBackgroundColor="#00BCD4"
                     app:cardCornerRadius="10dp"
                     app:contentPadding="4dp">
@@ -216,14 +222,15 @@
             </LinearLayout>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/wallet_history_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
-                app:contentPadding="4dp"
                 app:cardBackgroundColor="#00BCD4"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="10dp"
+                app:contentPadding="4dp">
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:layout_width="60dp"
@@ -244,7 +251,7 @@
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/acme"
-                    android:text="@string/history"
+                    android:text="@string/coinHistory"
                     android:textColor="@color/denimblue"
                     android:textSize="34sp"
                     app:autoSizeTextType="uniform" />
@@ -252,14 +259,15 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/wallet_transactions_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
-                app:contentPadding="4dp"
                 app:cardBackgroundColor="#00BCD4"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="10dp"
+                app:contentPadding="4dp">
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:layout_width="60dp"
@@ -279,7 +287,7 @@
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/acme"
-                    android:text="@string/transaction"
+                    android:text="@string/transactionHistory"
                     android:textColor="@color/denimblue"
                     android:textSize="34sp"
                     app:autoSizeTextType="uniform" />

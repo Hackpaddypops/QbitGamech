@@ -1,15 +1,17 @@
 package com.qbit.qbitgamech.model;
 
-public class Transaction {
-    String date;
+import java.time.LocalDateTime;
+
+public class TransactionHistory {
+    LocalDateTime date;
     int ruppees;
 
-    public Transaction(String date, int ruppees) {
+    public TransactionHistory(LocalDateTime date, int ruppees) {
         this.date = date;
         this.ruppees = ruppees;
     }
 
-    public String getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 

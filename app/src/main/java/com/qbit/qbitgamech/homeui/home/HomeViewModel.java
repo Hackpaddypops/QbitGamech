@@ -1,4 +1,4 @@
-package com.qbit.qbitgamech.ui.home;
+package com.qbit.qbitgamech.homeui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

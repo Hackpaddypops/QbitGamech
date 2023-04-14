@@ -1,8 +1,10 @@
-package com.qbit.qbitgamech;
+package com.qbit.qbitgamech.homeui.wallet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.qbit.qbitgamech.R;
 
 public class Redeem extends AppCompatActivity {
 

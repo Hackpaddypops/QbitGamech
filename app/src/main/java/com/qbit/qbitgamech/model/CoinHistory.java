@@ -1,15 +1,17 @@
 package com.qbit.qbitgamech.model;
 
-public class History {
-    String date;
+import java.time.LocalDateTime;
+
+public class CoinHistory {
+    LocalDateTime date;
     int coins;
 
-    public History(String date, int coins) {
+    public CoinHistory(LocalDateTime date, int coins) {
         this.date = date;
         this.coins = coins;
     }
 
-    public String getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 

@@ -1,4 +1,4 @@
-package com.qbit.qbitgamech.ui.profile;
+package com.qbit.qbitgamech.homeui.profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

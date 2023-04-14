@@ -4,6 +4,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/spaceblue"
     tools:context=".FAQ">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <!-- Question 1 -->
+            <TextView
+                android:id="@+id/question_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/akaya_telivigala"
+                android:onClick="onQuestionClicked"
+                android:padding="8dp"
+                android:text="@string/question_1"
+                android:textColor="#00BCD4"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Answer 1 -->
+            <TextView
+                android:id="@+id/answer_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akaya_telivigala"
+                android:padding="8dp"
+                android:text="@string/answer_1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- Question 2 -->
+            <TextView
+                android:id="@+id/question_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/akaya_telivigala"
+                android:onClick="onQuestionClicked"
+                android:padding="8dp"
+                android:text="@string/question_2"
+                android:textColor="#00BCD4"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Answer 2 -->
+            <TextView
+                android:id="@+id/answer_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akaya_telivigala"
+                android:padding="8dp"
+                android:text="@string/answer_2"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/question_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/akaya_telivigala"
+                android:onClick="onQuestionClicked"
+                android:padding="8dp"
+                android:text="@string/question_3"
+                android:textColor="#00BCD4"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Answer 1 -->
+            <TextView
+                android:id="@+id/answer_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akaya_telivigala"
+                android:padding="8dp"
+                android:text="@string/answer_3"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/question_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/akaya_telivigala"
+                android:onClick="onQuestionClicked"
+                android:padding="8dp"
+                android:text="@string/question_4"
+                android:textColor="#00BCD4"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Answer 1 -->
+            <TextView
+                android:id="@+id/answer_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akaya_telivigala"
+                android:padding="8dp"
+                android:text="@string/answer_4"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

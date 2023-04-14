@@ -3,6 +3,8 @@ package com.qbit.qbitgamech;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 public class FAQ extends AppCompatActivity {
 
@@ -11,4 +13,5 @@ public class FAQ extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq);
     }
+
 }
